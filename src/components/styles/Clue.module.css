@@ -1,0 +1,97 @@
+.clue,
+.clueCorrect,
+.clueIncorrect {
+    border: 2px solid #6051d0;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    background-color: #fff;
+}
+
+.clueCorrect {
+    border-color: #3fda96;
+}
+
+.clueIncorrect {
+    border-color: #e84747;
+}
+
+.title {
+    margin: 0;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    margin-top: 0.5rem;
+    background-color: white;
+    transition: 0.3s;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #6051d0;
+}
+
+.input {
+    outline: none;
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+.input:focus {
+    background-color: #6051d07c;
+}
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0.1rem;
+    border-radius: 1rem;
+    z-index: 2;
+    text-align: center;
+    font-size: 0.8rem;
+    position: absolute;
+    width: 20vw;
+    background-color: black;
+    bottom: 25px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .tooltiptext {
+        width: 80vw;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../components/Main";
+---
+
+<Layout>
+	<main>
+		<h1>Happy Teachers' Day!</h1>
+		<p>
+			I've prepared an actual physical gift for you this year, but first
+			you have to solve this puzzle to know where I <strike>hid</strike> placed
+			it 😜 The answers to this puzzle combined is where I
+			<strike>hid</strike> placed the gifts, in case it wasn't clear!
+		</p>
+		<p>
+			Hover over the underlined prompts (if that's what you call them 🤔?)
+			to get a hint!
+		</p>
+		<Main client:visible />
+		<p>🐦⚫️🐦⚫️🐦⚫️🐦⚫️🐦⚫️🐦⚫️🐦⚫️🐦⚫️🐦⚫️</p>
+	</main>
+</Layout>
+
+<style>
+	h1 {
+		text-align: center;
+		margin-bottom: 0.5rem;
+		background-image: linear-gradient(0deg, #442cf5, #db50c1);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		animation: pulse 6s ease-in-out infinite;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	main {
+		margin: auto;
+		padding: 1em;
+		max-width: 70ch;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			background-position-y: 20%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+</style>
