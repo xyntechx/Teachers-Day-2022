@@ -15,10 +15,30 @@ export default function ImageGrid({
         <>
             <div className={styles.container}>
                 <div className={styles.images}>
-                    <img src={isShow1 ? "/Clue/TL.png" : "/Placeholder/TL.png"} width={150} height={150} />
-                    <img src={isShow2 ? "/Clue/TR.png" : "/Placeholder/TR.png"} width={150} height={150} />
-                    <img src={isShow3 ? "/Clue/BL.png" : "/Placeholder/BL.png"} width={150} height={150} />
-                    <img src={isShow4 ? "/Clue/BR.png" : "/Placeholder/BR.png"} width={150} height={150} />
+                    <img
+                        src={isShow1 ? "/Clue/TL.png" : "/Placeholder/TL.png"}
+                        alt={isShow1 ? "Unlocked - Clue #1" : "Locked - Clue #1"}
+                        width={150}
+                        height={150}
+                    />
+                    <img
+                        src={isShow2 ? "/Clue/TR.png" : "/Placeholder/TR.png"}
+                        alt={isShow2 ? "Unlocked - Clue #2" : "Locked - Clue #2"}
+                        width={150}
+                        height={150}
+                    />
+                    <img
+                        src={isShow3 ? "/Clue/BL.png" : "/Placeholder/BL.png"}
+                        alt={isShow3 ? "Unlocked - Clue #3" : "Locked - Clue #3"}
+                        width={150}
+                        height={150}
+                    />
+                    <img
+                        src={isShow4 ? "/Clue/BR.png" : "/Placeholder/BR.png"}
+                        alt={isShow4 ? "Unlocked - Clue #4" : "Locked - Clue #4"}
+                        width={150}
+                        height={150}
+                    />
                 </div>
             </div>
             <br />
