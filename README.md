@@ -17,5 +17,5 @@ npm run dev
 ## 📚 Answer Key
 <details>
   <summary>Reveal Final Answer</summary>
-  > 22S06G Pigeon Hole
+  <code>22S06G Pigeon Hole</code>
 </details>
